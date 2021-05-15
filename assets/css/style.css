@@ -1,0 +1,73 @@
+:root {
+    --tertiary-color: darkturquoise;
+    --page-grey: dimgray;
+    --background: white;
+}
+
+body {
+    background-color: var(--page-grey);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.name {
+    background-color: var(--tertiary-color);
+    color: dimgray;
+    padding: 5px 8px 5px 20px;
+    text-align: right;
+    margin: 5px 0 10px 0;
+}
+
+.nav ul li {
+display: inline;
+color: var(--tertiary-color);
+border-bottom: 3px solid var(--tertiary-color);
+padding: 8px 5px;
+margin: 0 70px 0 0;
+text-align: center;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.banner {
+   background-image: url(../img/banner.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 150px;
+   flex-direction: row-reverse;
+   align-items: flex-end;
+   text-align: center;
+}
+
+.banner p {
+    background-color: var(--tertiary-color);
+    margin: 0 70px 10px 0;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--page-grey);
+    
+}
+
+.about-me {
+    background-color: var(--background);
+}
+
+.about-me h2 {
+    margin: 0;
+}
