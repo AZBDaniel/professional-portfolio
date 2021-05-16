@@ -7,14 +7,15 @@
 
 header {
   background-color: var(--pagegray-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header > h1 {
   background-color: var(--secondary-color);
   color: var(--pagegray-color);
-  text-align: right;
-  margin: 5px 0 15px 0;
-  padding: 5px;
   flex: 2 20%;
 }
 
@@ -23,6 +24,9 @@ header > .nav {
 }
 
 .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   margin: 0 40px 0 0;
 }
 
@@ -30,8 +34,8 @@ header > .nav {
   text-decoration: none;
   color: var(--secondary-color);
   border-bottom: 3px solid var(--secondary-color);
-  margin: 0 10px;
-  padding: 0 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
 body {
@@ -45,6 +49,15 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .banner p {
@@ -54,6 +67,11 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: var(--page-grey);
+}
+
+.banner img {
+  border: 3px solid var(--secondary-color);
+  margin-left: 20px;
 }
 
 .box-row {
@@ -94,6 +112,21 @@ body {
   align-items: center;
 }
 
+#about-me {
+  display: flex;
+  flex-direction: row;
+}
+
+#work {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: row;
+}
+
 .section-title {
   color: var(--primary-color);
   flex: 2 15%;
@@ -101,6 +134,12 @@ body {
   border-right: 3px solid var(--primary-color);
   padding: 10px;
   margin: 20px 0;
+}
+
+.section-title > h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .section-title > h2 > p {
@@ -111,6 +150,7 @@ body {
   flex: 2 85%;
   margin: 10px 0;
   padding: 10px 0;
+  color: var(--primary-color);
 }
 
 .section-content > p {
@@ -173,8 +213,20 @@ body {
   font-size: 10px;
 }
 
+.contact-me-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .contact-me-content > p {
   margin: 0;
+}
+
+.contact-me-content > a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -189,5 +241,60 @@ body {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  header {
+    flex-direction: column;
+  }
 
+  header > h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+  .section-title {
+    text-align: center;
+    border-right: none;
+    border-bottom: 3px solid var(--primary-color);
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+  .section-title > h2 {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .section-title > h2 > p {
+    margin: 5px;
+  }
+
+  #about-me {
+    flex-direction: column;
+  }
+
+  #work {
+    flex-direction: column;
+  }
+
+  #contact-me {
+    flex-direction: column;
+  }
+
+  .contact-me-content {
+    flex-direction: column;
+  }
+
+  .contact-me-content > a {
+    margin: 5px;
+  }
 }
