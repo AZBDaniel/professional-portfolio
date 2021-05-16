@@ -1,8 +1,8 @@
 :root {
   --background-color: white;
-  --primary-color: darkslategrey;
-  --secondary-color: darkturquoise;
-  --pagegray-color: #1c1c1c;
+  --primary-color: #333333;
+  --secondary-color: #ffcc00;
+  --pagegray-color: #003300;
 }
 
 header {
