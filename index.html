@@ -1,101 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Portfolio Website of Bryan Daniel</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Portfolio Website of Bryan Daniel</title>
 </head>
 
 <body>
-    <!-- navigation tags - block level element -->
-    <header  >
-      <div class="flex justify-between align-center">
-        <h1 class="name">
-          Bryan Daniel
-        </h1>
-        <div class="nav">
-          <ul>
-            <li>
-                <a href="#about-me">About Me</a>
+  <header>
+    <h1>
+      Bryan Daniel
+    </h1>
+    <div class="nav">
+      <a href="#about-me">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contact-me">Contact Me</a>
+    </div>
+  </header>
 
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-              <a href="#contact-me">Contact Me</a>
-            </li>
-          </ul>
+  <div class="banner">
+    <img src="assets/img/avatar.jpg" />
+    <div>
+      <p>
+        Portfolio
+      </p>
+    </div>
+  </div>
+
+  <section id="about-me">
+    <div class="section-title">
+      <h2>
+        <p>About</p>
+        <p>Me</p>
+      </h2>
+    </div>
+    <div class="section-content box-column">
+      <p>I am currently employed at Device Engineering Inc, which is an aerospace semiconductor design company as a Test Engineer & Qualification Manager. Work tasks include designing custom PCB boards for DEI products, monitoring and improving C+ test code used for biasing DEI devices in production, soldering PCB for production use/ customer evaluation boards, and performing Qualification stress testing on devices to meet industry standards of reliability.
+
+      </p>
+      <p>I started working for DEI 9 years ago as a tester, during that time I went to school at ITT-Tech to get a degree in Electronic Engineering. After graduating Summa Cum Laude, I was promoted at DEI to an Engineering Tech. Two years into that position I was promoted to Test Engineer, as well as Qualification Manager. As of recently with the COVID-19 changing all schooling to virtual for certain degrees, has given me an opportunity to go back to school and learn another skill.
+      </p>
+      <p>
+        I am currently enrolled at The University of Arizona coding boot-camp, a 6 month program that is accelerated  in teaching coding languages needed for web development front end and back end. After the compilation of the program my hope is to get a job working in the coding industry.
+      </p>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-title">
+      <h2>Work</h2>
+    </div>
+    <div class="section-content box-column">
+      <a href="https://azbdaniel.github.io/run-buddy/" class="tile large-tile box-row">
+        <div class="tile-tag">
+          <p class="tile-title">Run Buddy</p>
+          <p class="tile-info">HTML/CSS/JS</p>
         </div>
-      </div>
-    </header>
-    <!-- end navigation -->
-
-    <!--banner-->
-    <section class="banner flex">
-      <p>PORTFOLIO</p>
-    </section>
-    <!--end of banner-->
-
-    <!--page content-->
-    <section class="page-content flex">
-      <!--about me-->
-      <div id="about-me" class="flex">
-        <h2>
-          <p>About</p>
-          <p>Me</p>
-        </h2>
-        <p>
-          Placeholder-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        </p>
-      </div>
-      <!--end about me-->
-
-      <!--work-->
-      <div id="work" class="flex">
-        <h2>
-          Work
-        </h2>
-        <div>
-          <!-- Large Work-->
-          <div></div>
-          <!--tiles work-->
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+      </a>
+      <div class="box-row">
+        <a href="https://azbdaniel.github.io/horiseon-site/" class="tile small-tile t1 box-row">
+          <div class="tile-tag">
+            <p class="tile-title">Horiseon</p>
+            <p class="tile-info">HTML/CSS</p>
           </div>
-        </div>
+        </a>
+        <a href="" class="tile small-tile t2 box-row">
+          <div class="tile-tag">
+            <p class="tile-title">Project 3</p>
+            <p class="tile-info">Langauges ?</p>
+          </div>
+        </a>
       </div>
-      <!--end of work-->
+      <div class="box-row">
+        <a href=""class="tile small-tile t3 box-row">
+          <div class="tile-tag">
+            <p class="tile-title">Project 4</p>
+            <p class="tile-info">Langauges ?</p>
+          </div>
+        </a>
+        <a href=""class="tile small-tile t4 box-row">
+          <div class="tile-tag">
+            <p class="tile-title">Project 5</p>
+            <p class="tile-info">Langauges ?</p>
+          </div>
+        </a>
 
-      <!--contact me-->
-      <div id=contact-me class="flex contact-me">
-        <h2>
-          <p>Contact</p>
-          <p>Me</p>
-        </h2>
-        <div class="contact-me-list">
-          <ul>
-            <li>
-              (480) 747-8245
-            </li>
-            <li>
-              BRDaniel117@gmail.com
-            </li>
-            <li>
-              <a href="https://github.com/AZBDaniel">GitHub</a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/bryan-daniel117">LinkedIn</a> 
-            </li>
-          </ul>
-        </div>
       </div>
-      <!--end of page content-->
-    </section>
-    <!--end of navigation items-->
+    </div>
+  </section>
+
+  <section id="contact-me"  class="box-row">
+    <div class="section-title">
+      <h2>
+        <p>Contact</p>
+        <p>Me</p>
+      </h2>
+    </div>
+    <div class="section-content contact-me-content">
+      <p>(480) 747-8245</p>
+      <p>BRDaniel117@gmail.com</p>
+      <a href="https://linkedin.com/in/bryan-daniel117">LinkedIn</a>
+      <a href="https://github.com/AZBDaniel">GitHub</a>
+    </div>
+  </section>
 
 </body>
-</html>
